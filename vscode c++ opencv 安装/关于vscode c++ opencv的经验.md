@@ -39,6 +39,6 @@ collect2.exe: error: ld returned 1 exit status
 下载解压，然后再cmake编译opencv时，将里面的modules的文件夹路径填入OPENCV_EXTRA_MODULES_PATH
 
 ## 在进行代码测试时发现opencv无法videocapture无法读取视频，原因是编译后opencv bin目录(即D:\opencv-4.8.0\opencv\build\x64\mingw\bin)缺少ffmpeg的dll文件， 通过搜索ffmpeg，发现其在源码其他bin目录中
-[!本地路径](4444.jpg)
+![本地路径](4444.jpg)
 ## 于是直接将其复制粘贴到编译bin目录中，解决！！！
-[!本地路径](333.jpg)
+![本地路径](333.jpg)
