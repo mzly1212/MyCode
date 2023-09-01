@@ -1,0 +1,1 @@
+[{"domain": ".chinatowercom.cn", "expiry": 1693406033, "httpOnly": false, "name": "userOrgCode", "path": "/", "sameSite": "Lax", "secure": false, "value": "80510300"}, {"domain": "4a.chinatowercom.cn", "httpOnly": true, "name": "SESSION", "path": "/uac/", "sameSite": "Lax", "secure": false, "value": "884bf163-2100-4a6b-a4a7-bcf497503e11"}]
