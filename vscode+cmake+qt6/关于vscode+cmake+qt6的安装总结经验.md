@@ -12,3 +12,4 @@ target_link_libraries(${PROJECT_NAME} Qt6::Widgets Qt6::Core)`
 ### 解决方法：
 ### 1.若要在window上执行则需要将保护那些dll文件的文件夹路径添加到系统path变量中
 ### 2.若想直接在vscode集成终端上运行，可以在launch.json文件中添加环境变量`"environment": [{"name":"Path","value":"D:\\Qt\\6.5.2\\mingw_64\\bin"}]`，这种方法会在集成终端调试程序时替换系统环境变量，也就是说不影响编译，要正常编译还是得将路径添加到系统的环境变量中(之前编译时终端不能识别mingw32-make.exe就是因为我以为这种方法也能影响编译时的环境变量而将系统环境变量中相关路径删除了)
+## 3.3 源文件#include qt6相关文件时，c/c++红色波浪线报错，但是又可以正常编译调试，这是因为c_cpp_properties.json缺少`"configurationProvider": "ms-vscode.cmake-tools"`导致c/c++无法识别cmake添加的库
